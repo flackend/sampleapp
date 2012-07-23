@@ -7,6 +7,17 @@ gem 'rails', '3.2.6'
 
 gem 'pg'
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'spork'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'guard-spork'
+  gem 'rb-fsevent'
+  gem 'growl'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.

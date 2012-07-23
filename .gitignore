@@ -13,3 +13,22 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+##################
+## Aptana Studio
+##################
+
+.project
+
+############
+## OS files
+############
+
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
