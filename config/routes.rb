@@ -1,6 +1,6 @@
 Sampleapp::Application.routes.draw do
-  get "site/index"
   root :to => 'Site#index'
+  match 'signup' => 'User#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
