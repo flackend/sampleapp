@@ -10,10 +10,5 @@ describe "Site controller" do
       visit root_path
       page.should have_selector('a', content: 'Sign up')
     end
-    it "has a Sign Up link that goes to the /signup page" do
-      visit root_path
-      click_link "Sign Up"
-      response.should contain("chello")
-    end
   end
 end

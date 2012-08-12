@@ -7,6 +7,8 @@ gem 'rails', '3.2.6'
 
 gem 'pg'
 
+gem 'bcrypt-ruby'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
