@@ -4,28 +4,4 @@
 		<p>This is the home page for the Ruby on Rails tutorial Sample App being served up by the <%= @controller %> controller.</p>
 		<p><a href="/signup" class="btn btn-primary btn-large">Sign Up &raquo;</a></p>
 	</div>
-
-	<div class="row">
-		<div class="span8">
-			<h2>These are users...</h2>
-		</div>
-		<div class="span4">
-			<table class="table">
-				<thead>
-					<tr>
-						<td>Name</td>
-						<td>Email</td>
-					</tr>
-				</thead>
-				<tbody>
-					<% @users.each do |u| %>
-					<tr>
-						<td><%= u.name %></td>
-						<td><%= u.email %></td>
-					</tr>
-					<% end %>
-				</tbody>
-			</table>
-		</div>
-	</div><!-- row -->
 </div>

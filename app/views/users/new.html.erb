@@ -7,26 +7,26 @@
   </div><!-- row -->
   <div class="row">
   	<div class="span12">
-      <form class="well">
+      <form class="well" action="/users" method="post" accept-charset="UTF-8">
         <div class="input-prepend">
           <span class="add-on">
             <i class="icon-user"></i>
-          </span><input type="text" placeholder="Name">
+          </span><input type="text" placeholder="Name" name="user[name]">
         </div>
         <div class="input-prepend">
           <span class="add-on">
             <i class="icon-envelope"></i>
-          </span><input type="text" placeholder="Email">
+          </span><input type="text" placeholder="Email" name="user[email]">
         </div>
         <div class="input-prepend">
           <span class="add-on">
             <i class="icon-lock"></i>
-          </span><input type="password" placeholder="Password">
+          </span><input type="password" placeholder="Password" name="user[password]">
         </div>
         <div class="input-prepend">
           <span class="add-on">
             <i class="icon-lock"></i>
-          </span><input type="password" placeholder="Password again">
+          </span><input type="password" placeholder="Password again" name="user[password_confirmation]">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>

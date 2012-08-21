@@ -1,0 +1,26 @@
+<table class="table">
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td></td>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Join Date</td>
+		</tr>
+	</thead>
+	<tbody>
+		<% @users.each do |u| %>
+			<tr>
+				<td><%= u.id %></td>
+				<td>
+					<a href="/users/<%= u.id %>">
+						<img src="<%= gravatar_for u %>" alt="gravatar" class="gravatar" style="border-radius: 99999px; height: 20px">
+					</a>
+				</td>
+				<td><%= u.name %></td>
+				<td><%= u.email %></td>
+				<td><%= u.created_at.strftime "%m/%d/%y" %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
