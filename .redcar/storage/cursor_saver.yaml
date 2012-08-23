@@ -1,0 +1,23 @@
+--- 
+cursor_positions: 
+  - :path: spec/requests/site_spec.rb
+    :cursor_offset: 53
+    :timestamp: 2012-08-12 00:02:15 -04:00
+    :selection_offset: 323
+    :block_selection_mode: false
+  - :path: Guardfile
+    :cursor_offset: 0
+    :timestamp: 2012-07-23 18:27:00 -04:00
+  - :path: app/controllers/sessions_controller.rb
+    :cursor_offset: 69
+    :timestamp: 2012-08-21 03:09:12 -04:00
+  - :path: app/views/sessions/signin.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-08-21 03:08:20 -04:00
+  - :path: config/routes.rb
+    :cursor_offset: 144
+    :timestamp: 2012-08-21 03:07:19 -04:00
+  - :path: spec/requests/authentication_pages_spec.rb
+    :cursor_offset: 107
+    :timestamp: 2012-08-21 03:07:34 -04:00
+files_to_retain: 0
