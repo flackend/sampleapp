@@ -1,5 +1,5 @@
 set :application, "sampleapp"
-set :repository,  "git://github.com/flackend/sampleapp.git"
+set :repository,  "git@github.com:flackend/sampleapp.git"
 set :branch, "master"
 
 set :scm, :git
