@@ -1,18 +1,19 @@
 <section class="row">
-	<div class="span4 offset4" style="text-align: center">
-		<p><h1>Sign In</h1></p>
-		<form method="post" action="/sessions" accept="utf-8" class="well">
-		  <div class="input-prepend">
-		    <span class="add-on">
-		      <i class="icon-envelope"></i>
-		    </span><input type="text" placeholder="Email" name="user[email]">
-		  </div>
-		  <div class="input-prepend">
-		    <span class="add-on">
-		      <i class="icon-lock"></i>
-		    </span><input type="password" placeholder="Password" name="user[password]">
-		  </div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	</div>
+  <div class="span4 offset4" style="text-align: center">
+    <p><h1>Sign In</h1></p>
+    <form method="post" action="/sessions" accept="utf-8" class="well">
+      <div class="input-prepend">
+        <span class="add-on">
+          <i class="icon-envelope"></i>
+        </span><input type="text" placeholder="Email" name="user[email]">
+      </div>
+      <div class="input-prepend">
+        <span class="add-on">
+          <i class="icon-lock"></i>
+        </span><input type="password" placeholder="Password" name="user[password]">
+      </div>
+      <button type="submit" class="btn btn-primary" id=Submit>Submit</button>
+    </form>
+    <p>Not registered? <a href="<%= signup_path %>">Sign up!</p>
+  </div>
 </section>

@@ -46,7 +46,10 @@ end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
-
+	t = Time.now.strftime "# Change detected, %I:%M %p #"
+	puts '#' * t.length
+	puts t
+	puts '#' * t.length
 end
 
 # --- Instructions ---
