@@ -1,3 +1,7 @@
+require "bundler/capistrano"
+
+default_run_options[:pty] = true
+
 set :application, "sampleapp"
 set :repository,  "git@github.com:flackend/sampleapp.git"
 set :branch, "master"
