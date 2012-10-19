@@ -23,6 +23,7 @@ end
 group :development do
 	gem 'capistrano'
 	gem 'annotate'
+	gem 'hirb'
 end
 
 # Gems used only for assets and not required

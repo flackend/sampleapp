@@ -2,6 +2,9 @@ class UsersController < ApplicationController
   def index
   	@users = User.all
   end
+  def new
+    @user = User.new
+  end
   def create
   	@user = User.create(params[:user])
   	if @user.save
@@ -9,10 +12,8 @@ class UsersController < ApplicationController
 			redirect_to @user
   	else
   		flash.now[:error] = @user.errors.full_messages
-  		render 'new'
+  		render :new
   	end
-  end
-  def new
   end
   def edit
   end

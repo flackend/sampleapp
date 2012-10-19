@@ -1,7 +1,0 @@
-<section class="container">
-	<h1><%= @product.name %> <small>$<%= @product.cost %></small></h1>
-	<p>Generates $<%= @product.value %> and <%= @product.xp %> XP every <%= @product.time / 60 %> minutes.</p>
-	<p>Makes $<%= @val_p_min %> per minute.</p>
-	<p><%= @qty %> <%= @product.name.pluralize %> generate $<%= @total_val_p_min %> per minute, $<%= @total_val_p_min * 5 %> per cycle (about <%= (@product.time / 60) + 1 %>min), and a bit less than $<%= @total_val_p_min * 60 %> per hour.</p>
-	<p>Make a new house after <%= (@product.cost / @total_val_p_min).to_int  %> minutes</p>
-</section>

@@ -1,0 +1,14 @@
+Thu, 18 Oct 2012 18:47:57 -0400
+doc/README_FOR_APP	Mon, 23 Jul 2012 17:31:50 -0400
+app/controllers/application_controller.rb	Fri, 05 Oct 2012 00:59:17 -0400
+app/controllers/products_controller.rb	Tue, 21 Aug 2012 01:12:18 -0400
+app/controllers/sessions_controller.rb	Wed, 17 Oct 2012 23:24:21 -0400
+app/controllers/site_controller.rb	Wed, 17 Oct 2012 19:55:58 -0400
+app/controllers/users_controller.rb	Wed, 17 Oct 2012 18:58:14 -0400
+app/helpers/application_helper.rb	Mon, 23 Jul 2012 17:31:50 -0400
+app/helpers/products_helper.rb	Tue, 21 Aug 2012 01:12:18 -0400
+app/helpers/sessions_helper.rb	Wed, 17 Oct 2012 23:32:18 -0400
+app/helpers/site_helper.rb	Mon, 23 Jul 2012 18:45:00 -0400
+app/helpers/user_helper.rb	Tue, 21 Aug 2012 01:12:18 -0400
+app/models/product.rb	Tue, 21 Aug 2012 01:12:18 -0400
+app/models/user.rb	Wed, 17 Oct 2012 23:45:57 -0400

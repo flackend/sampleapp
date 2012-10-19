@@ -11,11 +11,12 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation
 
   has_secure_password
 
-  before_save { |user| user.email = email.downcase }
+	before_validation { email.downcase! }
+  before_save :create_remember_token
 
   validates(:name, {
     presence: true,
@@ -24,10 +25,16 @@ class User < ActiveRecord::Base
   validates :email,
     presence: true,
     format: { with: /\A.+@[a-z\d\-.]+\z/i },
-    uniqueness: {case_sensitive: true}
+    uniqueness: true
   validates :password,
     presence: true,
     length: { minimum: 6, maximum: 255 }
   validates :password_confirmation,
     presence: true
+
+  private
+	
+      def create_remember_token
+        self.remember_token = SecureRandom.urlsafe_base64
+      end
 end

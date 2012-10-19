@@ -14,14 +14,14 @@ require 'spec_helper'
 
 describe User do
 
-    before do
-      @user = User.new(
-        name: 'John Smith',
-        email: 'jsmith@email.com',
-        password: 'foobar',
-        password_confirmation: 'foobar'
-       )
-    end
+  before do
+    @user = User.new(
+      name: 'John Smith',
+      email: 'jsmith@email.com',
+      password: 'foobar',
+      password_confirmation: 'foobar'
+    )
+  end
 
   # User
 
@@ -31,12 +31,13 @@ describe User do
 
   # User attributes
 
-  it "should respond to :name, :email, and :password_digest" do
+  it "should respond to :name, :email, :password_digest, etc..." do
     @user.should(respond_to(:name))
     @user.should(respond_to(:email))
     @user.should(respond_to(:password_digest))
     @user.should(respond_to(:password))
     @user.should(respond_to(:password_confirmation))
+    @user.should(respond_to(:remember_token))
     @user.should(respond_to(:authenticate))
   end
 
@@ -122,4 +123,16 @@ describe User do
       @user.should_not == u.authenticate('wrong password...')
     end
   end
+  
+  # Remeber token
+  
+  describe "remember token" do
+  	
+  	before { @user.save }
+  	
+  	it "should not be blank" do
+  		@user.remember_token.should_not be_blank
+  	end
+  end
+  
 end
